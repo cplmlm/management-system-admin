@@ -1,0 +1,94 @@
+/* Global definition less */
+@primary-color: #1890ff;
+
+html,
+body,
+#root {
+    height: 100%
+}
+
+/*清浮动*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: block
+}
+
+/* login container（先固定样式） */
+.login-container {
+    background-color: #eeeeee !important;
+
+    .login-box {
+        background-color: hsl(0deg 0% 100% / 80%) !important;
+
+        .login-form {
+            background-color: transparent !important;
+            box-shadow: 2px 3px 7px rgb(0 0 0 / 20%) !important;
+
+            .login-logo {
+                .logo-text {
+                    color: #475768 !important;
+                }
+            }
+
+            .login-btn {
+                .ant-btn-default {
+                    color: #606266 !important;
+                }
+            }
+        }
+    }
+}
+.input-width{
+    width: 90% !important;
+}
+.select-width{
+    width: 90% !important;
+}
+.form-content{
+    padding-top: 20px;
+}
+.main-content {
+    padding: 20px;
+    height: 100%;
+    background: #fff;
+    overflow-y: auto;
+}
+.left-right-container {
+	display: flex;
+	height: 100%;
+	.left{
+		width: 330px;
+		border: solid 1px #f1f1f1;    
+		border-radius: 8px;
+		background: #fff;
+		padding: 2px;
+        margin-right: 15px;
+        overflow-y: auto;
+	}
+	.right{
+		border: solid 1px #f1f1f1;    
+		border-radius: 8px;   
+		width: 100%;
+		padding: 15px;
+		overflow-x: auto;
+        overflow-y: auto;
+		background: #fff;
+		.row{
+			margin-top: 10px;
+		}
+	}
+}
+
+.icp-info{
+    position: fixed;
+    bottom: 0px;
+    color: #fff;
+    font-size: 12px;
+}
